@@ -69,20 +69,20 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building Exceptional User Experiences
+          Transforming Ideas into Reality
           </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            I’m an independent designer. My interest lies in brand experience,
-            and user experience.
+          <p className="mt-4 text-center text-white/60 md:text-lg">"I’m an independent developer focused on transforming ideas into reality, creating intuitive, scalable, and engaging websites that enhance brand and user experiences."
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl ">
+          <a href="#project_section" className="z-10">
+          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          </a>
+          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10">
             <span>👋</span>
             <span className="font-semibold">Let's Connect</span>
           </button>

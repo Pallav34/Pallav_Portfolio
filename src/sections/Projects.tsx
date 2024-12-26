@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import learning from "@/assets/images/learning.png";
+import unblue from "@/assets/images/unblue.png";
+import multithreaded from "@/assets/images/multithreaded.png";
 import Image from "next/image";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -10,46 +10,46 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Full-Stack + AWS",
+    year: "2024",
+    title: "Full-stack Learning Management Application",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Beautiful looking real time learning management application, USER FRIENDLY interfaces."},
+      { title: "Built with React.js (frontend) and TypeScript (backend), using DynamoDB for fast, scalable data management." },
+      { title: "Integrated Clerk for seamless user authentication and deployed on AWS Lambda for cost-effective scalability." },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://learning-management-tau.vercel.app/",
+    image: learning,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
+    company: "React.js",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Agency Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Developed a fast, responsive website with React.js, reducing load time by 30% and increasing user engagement by 25%." },
+      { title: "The modern design led to a 40% increase in traffic and a 15% boost in conversions within the first three months." },
+      { title: "Built with React’s modular architecture, supporting up to 3x traffic growth and easy future updates." },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://www.unblue.in/",
+    image: unblue,
+  },
+  {
+    company: "Core Computer Science",
+    year: "2024",
+    title: "Multithreaded Proxy Web Server",
+    results: [
+      { title: "Designed a Proxy server to handle multiple client requests, storing the response as Cache" },
+      { title: "Handled the requests using semaphores, locks, and an HTTP parser. Used LRU cache, Linked Lists, and different structs to achieve Multithreaded behavior and to avoid RACE condition" },
+      { title: "Achieved Parallel and Concurrent behavior of different client requests on Multiprocessor systems" },
+    ],
+    link: "https://github.com/Pallav34/Multithereded-Proxy-Server",
+    image: multithreaded,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="project_section">
       <div className="container">
         <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences."/>
        
@@ -75,8 +75,8 @@ export const ProjectsSection = () => {
               <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
 
               <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                {project.results.map((result) => (
-                  <li className="flex gap-2 text-sm md:text-base text-white/50">
+                {project.results.map((result,idx) => (
+                  <li className="flex gap-2 text-sm md:text-base text-white/50" key={idx}>
                     <CheckCircleIcon className="size-5 md:size-6"/>
                     <span>{result.title}</span>
                   </li>
