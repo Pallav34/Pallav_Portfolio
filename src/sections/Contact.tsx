@@ -14,10 +14,10 @@ export const ContactSection = () => {
           <div className="flex flex-col gap-8 md:gap-16 items-center md:flex-row">
             <div>
             <h2 className="font-serif text-2xl md:text-3xl">
-              Let's Create something amazing together
+              Let&#39;s Create something amazing together
             </h2>
             <p className="text-sm mt-2 md:text-base">
-              Ready to bring your next project to Life? Let's Connect and
+              Ready to bring your next project to Life? Let&#39;s Connect and
               discuss. I can help you achive your goals.
             </p>
             </div>
